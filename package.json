@@ -1,0 +1,14 @@
+{
+  "name": "xangi-location",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.mjs serve",
+    "check": "node --check src/location.mjs && node --check src/server.mjs && node --check tests/location.test.mjs && node --check scripts/verify-xangi.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:xangi": "node scripts/verify-xangi.mjs"
+  }
+}

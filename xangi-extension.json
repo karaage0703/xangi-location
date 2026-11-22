@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 2,
+  "id": "xangi-location",
+  "displayName": "Location",
+  "description": "OwnTracksから本人の最新位置を受信し、取得時刻と精度をxangiへ提供する。",
+  "version": "0.1.0",
+  "entrypoint": "src/server.mjs",
+  "runtime": { "kind": "managed-http" },
+  "permissions": [
+    "認証したOwnTracks端末から緯度・経度・精度・取得時刻を受信する",
+    "拡張専用ディレクトリに最新位置1件を保存する",
+    "xangiの認証済みAPI要求へ最新位置と経過時間を返す"
+  ],
+  "setup": { "instructions": "XANGI_SETUP.md" },
+  "capabilities": [{ "id": "location.read", "protocol": "http", "healthPath": "/health" }]
+}
