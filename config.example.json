@@ -1,0 +1,8 @@
+{
+  "dataDir": "./data",
+  "ingestPort": 18991,
+  "username": "owner",
+  "password": "REPLACE_WITH_RANDOM_PASSWORD",
+  "deviceId": "iphone",
+  "maxAgeSeconds": 1800
+}
